@@ -26,17 +26,17 @@
     <!--Navigation_Links-->
     <ul id ="primaryNavigation" class="nav__primary">
         <li class="nav__list-Item nav__list-Item--1"><a class="nav__Link" href="#/">Our Group</a></li>
-          <li class="nav__list-Item nav__list-Item--2">
+          <li class="nav__list-Item nav__list-Item--2 nav__list-special">
               <div class="nav__secondaryNav"><a class="nav__Link" href="#/">Our Division</a>
                <button aria-expanded ="false" aria-controls="nav__second1" class="toggle2 material-icons">expand_more</button>
             </div>
             <ul id="nav__second1" class="nav__secondary">
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">Our Operation Structure</a></li>
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">Water Division</a></li>
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">Transport Division</a></li>
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">Telecom Division</a></li>
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">Energy Division</a></li>
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">Plant & Fleet Solutions</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">Our Operation Structure</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">Water Division</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">Transport Division</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">Telecom Division</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">Energy Division</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">Plant & Fleet Solutions</a></li>
             </ul>
         </li>
         <li class="nav__list-Item nav__list-Item--3"><a class="nav__Link" href="#/">Our People</a></li>
@@ -45,11 +45,11 @@
             <button aria-expanded ="false" aria-controls="nav__second2" class="toggle2 material-icons">expand_more</button>
         </div>
             <ul id="nav__second2" class="nav__secondary">
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">Our Investment Strategy</a></li>
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">IR Contracts</a></li>
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">Tax Strategy</a></li>
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">Sector Analysis</a></li>
-                <li class="nav__list-item2"><a class="nav__secondaryElement" href="#/">Annual Report</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">Our Investment Strategy</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">IR Contracts</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">Tax Strategy</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">Sector Analysis</a></li>
+                <li class="nav__list--item2"><a class="nav__secondaryElement" href="#/">Annual Report</a></li>
             </ul>
         </li>
         <li class="nav__list-Item nav__list-Item--5"><a class="nav__Link" href="#/">Our News</a></li>
@@ -334,14 +334,16 @@
             <div class="footer__secondary-container">
               <div class="footer__flex1">
                 <div class="footer__logo">
-                <img loading="lazy" class="footer__logo-img" src="../Pictures&Icons/logo-proEnergy.png" alt="logo_pro_energy.png">
+                    <a class="footer__logoLink" href="#">
+                        <img loading="lazy" class="footer__logo-img" src="../Pictures&Icons/logo-proEnergy.png" alt="logo_pro_energy.png">
+                    </a>
             </div>
         </div>
         <div class="footer__flex2">
                 <div class="footer__icons">
-                    <i tabindex="0" class="zmdi zmdi-twitter zmdi-hc-2x"></i>
-                    <i tabindex="0" class="zmdi zmdi-linkedin zmdi-hc-2x"></i>
-                    <i tabindex="0" class="zmdi zmdi-facebook zmdi-hc-2x"></i>
+                    <span tabindex="0" class="footer__icon zmdi zmdi-twitter zmdi-hc-2x"></span>
+                    <span tabindex="0" class="footer__icon zmdi zmdi-linkedin zmdi-hc-2x"></span>
+                    <span tabindex="0" class="footer__icon zmdi zmdi-facebook zmdi-hc-2x"></span>
                 </div>
                 <div class="footer__links">
                     <p class="footer__link-text"><a class="footer__link" href="#/">Cookies</a></p>

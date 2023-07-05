@@ -103,10 +103,36 @@ a {
   }
 }
 
+input {
+  opacity: 0.6;
+}
+input:hover, input:focus {
+  opacity: 1;
+  cursor: context-menu;
+}
+
+textarea {
+  opacity: 0.6;
+}
+textarea:hover, textarea:focus {
+  opacity: 1;
+  cursor: context-menu;
+}
+
 .nav {
   width: 100%;
   background-color: #FFFFFF;
   border-bottom: 1px solid #CFCDCC;
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .nav {
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav {
+    border-bottom: none;
+  }
 }
 .nav__content {
   position: relative;
@@ -158,7 +184,7 @@ a {
   display: flex;
   gap: 2rem;
   font-size: 1.6rem;
-  min-width: 5, 47rem;
+  min-width: 5.47rem;
   background-color: #FFFFFF;
   flex-direction: row;
   line-height: 20px;
@@ -193,36 +219,18 @@ a {
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .nav__content .nav__primary .nav__list-Item {
     padding: 2rem 0;
+    border-bottom: 1px solid #000000;
   }
 }
 @media screen and (max-width: 480px) {
   .nav__content .nav__primary .nav__list-Item {
     padding: 2rem 0;
+    border-bottom: 1px solid #000000;
   }
 }
 .nav__content .nav__primary .nav__list-Item::marker {
   content: "";
   display: none;
-}
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .nav__content .nav__primary .nav__list-Item::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #CFCDCC;
-    top: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .nav__content .nav__primary .nav__list-Item::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #CFCDCC;
-    top: 0;
-  }
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .nav__content .nav__primary .nav__list-Item--1::after {
@@ -291,9 +299,6 @@ a {
   height: 3px;
   border-radius: 10px;
 }
-.nav #nav__second1 {
-  right: -4rem;
-}
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .nav #nav__second1 {
     right: auto;
@@ -303,9 +308,6 @@ a {
   .nav #nav__second1 {
     right: auto;
   }
-}
-.nav #nav__second2 {
-  right: -5rem;
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .nav #nav__second2 {
@@ -340,6 +342,9 @@ a {
   border: none;
   cursor: pointer;
   color: #E66559;
+}
+.nav .nav__list-special {
+  position: relative;
 }
 .nav .nav__secondary {
   position: absolute;
@@ -406,21 +411,30 @@ a {
   font-weight: 500;
   color: #575756;
 }
-.nav .nav__secondary .nav__list-item2 {
+.nav .nav__secondary .nav__list--item2,
+.nav .nav__secondary .nav__list--item1 {
   list-style: none;
 }
-.nav .nav__secondary .nav__list-item2:hover {
+.nav .nav__secondary .nav__list--item2:hover,
+.nav .nav__secondary .nav__list--item1:hover {
   background-color: #FFFFFF;
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .nav .nav__secondary .nav__list-item2:hover {
+  .nav .nav__secondary .nav__list--item2:hover,
+  .nav .nav__secondary .nav__list--item1:hover {
     background-color: #F1F0F0;
   }
 }
 @media screen and (max-width: 480px) {
-  .nav .nav__secondary .nav__list-item2:hover {
+  .nav .nav__secondary .nav__list--item2:hover,
+  .nav .nav__secondary .nav__list--item1:hover {
     background-color: #F1F0F0;
   }
+}
+.nav .nav__secondary .nav__list--item2::marker,
+.nav .nav__secondary .nav__list--item1::marker {
+  content: "";
+  display: none;
 }
 
 .fixed {
@@ -1423,6 +1437,13 @@ a {
 .footer__container .footer__secondary-container .footer__flex1 .footer__logo .footer__logo-img {
   height: 5.395rem;
 }
+.footer__container .footer__secondary-container .footer__logoLink {
+  opacity: 1;
+}
+.footer__container .footer__secondary-container .footer__logoLink:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
 .footer__container .footer__secondary-container .footer__flex2 {
   display: flex;
   width: 55%;
@@ -1464,6 +1485,13 @@ a {
     justify-content: center;
   }
 }
+.footer__container .footer__secondary-container .footer__flex2 .footer__icons .footer__icon {
+  opacity: 1;
+}
+.footer__container .footer__secondary-container .footer__flex2 .footer__icons .footer__icon:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
 .footer__container .footer__secondary-container .footer__flex2 .footer__links {
   display: flex;
   gap: 2rem;
@@ -1486,9 +1514,11 @@ a {
   font-size: 1.4rem;
   line-height: 17.5px;
   font-weight: 700;
-}
-.footer__container .footer__secondary-container .footer__flex2 .footer__links .footer__link {
   color: #000000;
+  opacity: 1;
+}
+.footer__container .footer__secondary-container .footer__flex2 .footer__links .footer__link:hover {
+  opacity: 0.6;
 }
 .footer .footer__bottom {
   background-color: #E66559;

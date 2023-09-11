@@ -1113,6 +1113,12 @@ textarea:hover, textarea:focus {
   height: 8.7rem;
   border-radius: 50%;
 }
+@media screen and (max-width: 480px) {
+  .opinions__container .opinions__nonscrollable-container .opinions__comments-container .opinions__tertiary-container .opinions__profileImg {
+    width: 5.7rem;
+    height: 5.7rem;
+  }
+}
 .opinions__container .opinions__nonscrollable-container .opinions__comments-container .opinions__tertiary-container .opinions__proffesion {
   margin: auto 0;
   width: 100%;

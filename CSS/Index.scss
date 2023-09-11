@@ -980,6 +980,10 @@ overflow-y:auto;
             width:8.7rem;
             height:8.7rem;
             border-radius:50%;
+            @include m.breakpoint(mobile){
+                width:5.7rem;
+                height:5.7rem;
+            }
         }
         .opinions__proffesion{
             margin:auto 0;
